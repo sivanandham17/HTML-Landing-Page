@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="nav-bar clearfix">
+            <a href="#" class="logo">
+                <img src="assets/logo.jpg" >
+            </a>
+            <div class="right-area">
+                <div class="hamburger-icon">
+                    <div class="hamburger-line first"></div>
+                    <div class="hamburger-line second "></div>
+                    <div class="hamburger-line third"></div>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Use Case</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <button>Request a quote</button>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="banner-area clearfix" >
+            <div class="banner-imgContainer">
+                <img class="" src="/assets/banner.jpg">
+            </div>
+            <div class="banner-textContainer">
+                <h2 class="title">Navigating the
+                    digital landscape
+                    for success </h2>
+               
+                <p class="content">Our digital marketing agency helps business
+                    grow and succeed online through a range of 
+                    services including SEO,PPC,social media marketing 
+                    and content creation.</p>
+                <button class="buttons">Book a consultation</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="logos clearfix">
+           <div class="logoimg amazon"></div>
+           <div class="logoimg dribble"></div>
+           <div class="logoimg hubspot"></div>
+           <div class="logoimg notion"></div>
+           <div class="logoimg netflix"></div>
+           <div class="logoimg zoom"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sharedbox services clearfix" >
+            <h1>Services</h1>
+            <p>At our digital marketing agency,we offer a range of services to help
+                businesses grow and succeed online.these services include:</p>
+        </div>  
+    </div>
+    <div class="container">
+        <div class="servicebox clearfix">
+              <img src="/assets/servicebox.jpg">
+        </div>
+    </div>
+    <div class="container">
+        <div class="contact clearfix">
+            <div class="contact-imagearea">
+                <img class="image"  src="/assets/contact.jpg">
+             </div>
+            <div class="contact-textarea">
+                <p class="title2">Let's make things happen</p>
+                <p class="content">us today to learn more about how our digital
+                    marketing services can help your business grow and
+                    succeed online.</p>
+                <button class="buttons">Get your free proposal</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="sharedbox casestudy clearfix">
+            <h1>Case study</h1>
+            <p>Explore Real-Life Examples of Our Proven Digitan Marketing Success<br>
+                through our Case Studies</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="footer clearfix">
+            <div class="foot">For a local restaurent we implemented a targeted ppc campaing
+                the resulted in a 50% increase in website traffic and 25% increase in sites.
+                <a href="#"><span>Know More</span></a>
+            </div>
+            <div class="foot">For a local restaurent we implemented a targeted ppc campaing
+                the resulted in a 50% increase in website traffic and 25% increase in sites.
+                <a href="#"><span>Know More</span></a>
+            </div>
+            <div class="foot">For a local restaurent we implemented a targeted ppc campaing
+                the resulted in a 50% increase in website traffic and 25% increase in sites.
+                <a href="#"><span>Know More</span></a>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="mobile-menu">
+        <div>About us</div>
+        <div>Service</div>
+        <div>Use Case</div>
+        <div>Pricing</div>
+        <div>Blog</div>
+    </div>
+
+    <div class="dialogbox">
+        
+    </div>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+
+        $(function(){
+            $('.hamburger-icon').click(function(){
+                $('.hamburger-icon').toggleClass('open');
+                $('.mobile-menu').toggleClass('open');
+            })
+        })
+    </script>
+
+</body>
+
+</html>

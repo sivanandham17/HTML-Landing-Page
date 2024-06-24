@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'PoetsenOne';
+  src: url(/css/fonts/PoetsenOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'popins';
+  src: url(/css/fonts/Poppins-Regular.ttf);
+}
+
+body {
+  font-family: 'popins';
+  line-height: 1.4;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.nav-bar {
+  padding-right: 10px;
+  margin-top: 15px;
+}
+
+.logo img {
+  width: 17%;
+  float: left;
+  margin-left: -30px;
+}
+
+.right-area {
+  float: right;
+}
+
+.menu {
+  float: left;
+  text-align: center;
+}
+
+.menu li {
+
+  float: left;
+  padding: 20px;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-bar button {
+  border-radius: 6px;
+  padding: 13px 40px;
+  margin: 8px 20px;
+}
+
+.banner-area {
+  padding-top: 10px;
+}
+
+.banner-textContainer {
+  float: left;
+  width: 40%;
+  padding-right: 30px;
+  padding-top: 50px;
+}
+
+.banner-imgContainer {
+  float: right;
+  width: 50%;
+  padding-left: 40px;
+}
+
+.buttons {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 14px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 17px 25px;
+  margin-top: 40px;
+}
+
+.buttons:hover {
+  background-color: rgb(233, 227, 227);
+  color: rgb(18, 16, 16);
+}
+
+.title {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.content {
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.logos {
+  width: 100%;
+  height: 200px;
+}
+
+.logoimg {
+  background-image: url('/assets/logos.jpg');
+  /* Ensure the path is correct */
+  background-repeat: no-repeat;
+  background-size: 760%;
+  width: 180px;
+  margin-right: 20px;
+  height: 100px;
+  float: left;
+
+}
+
+.amazon {
+  background-position: -90px -70px;
+}
+
+.dribble {
+  background-position: -290px -70px;
+}
+
+.hubspot {
+  background-position: -490px -70px;
+}
+
+.notion {
+  background-position: -700px -70px;
+}
+
+.netflix {
+  background-position: -920px -70px;
+}
+
+.zoom {
+  background-position: -1140px -70px;
+}
+
+
+/* for 3 and 6 th box */
+.sharedbox h1 {
+  float: left;
+  background-color: rgb(150, 233, 72);
+  border: 1px solid rgb(249, 246, 246);
+  border-radius: 5px;
+  padding: 4px 21px;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.sharedbox p {
+  padding-right: 418px;
+  padding-left: 200px;
+}
+
+/* end */
+.servicebox img {
+  width: 107%;
+  margin-top: 40px;
+  margin-left: -45px;
+}
+
+.contact {
+  background-color: rgb(245 242 242);
+  border: 1px solid rgb(252, 247, 247);
+  border-radius: 45px;
+  height: 310px;
+  margin-top: 30px;
+}
+
+.title2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.contact-textarea {
+  width: 70%;
+  float: left;
+  padding-top: 45px;
+  padding-left: 54px;
+  padding-right: 350px;
+}
+
+.contact-imagearea {
+  float: right;
+  width: 30%;
+
+}
+
+.image {
+  margin: 0px -145px;
+}
+
+.casestudy p {
+  color: black;
+  padding-left: 240px;
+}
+
+.casestudy {
+  margin-top: 50px;
+}
+
+.footer {
+
+  margin-top: 60px;
+  height: 250px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  padding-top: 48px;
+  margin-bottom: 50px;
+}
+
+.foot {
+  border-right: 1px solid white;
+  float: left;
+  width: 33.3%;
+  padding-right: 50px;
+  padding-left: 66px;
+}
+
+.footer :last-child {
+  border-right: none;
+}
+
+span {
+  display: block;
+  padding-top: 22px;
+  color: rgb(32, 244, 32)
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+
+.hamburger-line {
+  width: 30px;
+  height: 4px;
+  background-color: #111;
+  margin: 6px 0;
+  border-radius: 5px;
+  transition: all ease 0.2s;
+}
+
+.hamburger-icon.open {
+  position: fixed;
+  right: 35px;
+  z-index: 9;
+}
+
+.hamburger-icon.open .hamburger-line.first {
+  transform: rotate(45deg) translate(9px, 9px);
+}
+
+.hamburger-icon.open .hamburger-line.second {
+  display: none;
+}
+
+.hamburger-icon.open .hamburger-line.third {
+  transform: rotate(-45deg) translate(-2px, 1px);
+}
+
+.hamburger-icon{
+  display: none;
+}
+
+
+
+.mobile-menu {
+  transition: all ease 0.2s;
+  transform: translateX(330px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 330px;
+  height: 200px;
+  background-color: red;
+  
+}
+
+.mobile-menu.open {
+  transform: translateX(100px);
+  
+}
+
+@media only screen and (max-width:768px) {
+
+  .menu {
+    display: none;
+  }
+
+  .logo img {
+    margin-left: 0;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .nav-bar button {
+    display: none;
+  }
+
+  .banner-imgContainer,
+  .banner-textContainer {
+    margin-left: 25px;
+    width: 100%;
+
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .hamburger {
+    display: block;
+    float: right;
+  }
+
+  .sharedbox p {
+    margin-top: 20px;
+    padding-right: 0;
+    padding-left: 40px;
+  }
+
+  .contact-imagearea,
+  .contact-textarea {
+    width: 100%;
+  }
+
+  .image {
+    margin: 0 0;
+  }
+
+  .contact {
+    height: 640px;
+  }
+
+  .sharedbox h1 {
+    margin-left: 250px;
+    float: none;
+    width: 210px;
+  }
+
+  .footer {
+    margin: 30px 15px;
+    height: 400px;
+  }
+
+  .foot {
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin-bottom: 41px;
+  }
+
+  .logos {
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+}
